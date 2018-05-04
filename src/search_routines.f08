@@ -1,7 +1,6 @@
 module search_routines
   use class_Graph
   use class_Stack
-  use class_StackIterator
   implicit none
 contains
 

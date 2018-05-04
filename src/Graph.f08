@@ -1,6 +1,5 @@
 module class_Graph
   use class_Stack
-  use class_StackIterator
   use utility
 
   integer :: WHITE = 0, GRAY = 1, BLACK = 2

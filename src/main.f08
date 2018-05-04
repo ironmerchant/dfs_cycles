@@ -8,7 +8,7 @@ program myprog
   integer :: num_vertices = 30, i, num_edges, percent_edges = 50
   integer, allocatable :: edges(:,:)
 
-  print *, "Hello main@"
+  print *, "Hello main"
   num_edges = int(percent_edges * (num_vertices**2 - num_vertices) / 200)
   allocate(edges(num_edges, 2))
 

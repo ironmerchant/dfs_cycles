@@ -1,0 +1,11 @@
+# ninja log v5
+0	79	1525412966	prog@exe/src_utility.f08.o	6f45fdc455d7a2ff
+80	83	1525412966	prog@exe/utility.mod	486a3acadd116b47
+83	158	1525412966	prog@exe/src_Stack.f08.o	2c13b003b0d1bb57
+158	160	1525412966	prog@exe/class_stack.mod	486a3acadd116b47
+160	293	1525412966	prog@exe/src_Graph.f08.o	c82c4468cf7b5511
+293	296	1525412966	prog@exe/class_graph.mod	486a3acadd116b47
+296	370	1525412966	prog@exe/src_search_routines.f08.o	80fe70879386976d
+370	373	1525412966	prog@exe/search_routines.mod	486a3acadd116b47
+373	447	1525412966	prog@exe/src_main.f08.o	f0c5bd064c741e07
+447	590	1525412966	prog	b91812de78665b56

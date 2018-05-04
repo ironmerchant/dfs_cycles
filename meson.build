@@ -6,6 +6,5 @@ executable('prog',
            'src/utility.f08',
            'src/Stack.f08',
            'src/Graph.f08',
-           'src/StackIterator.f08',
            'src/search_routines.f08',
            'src/main.f08')
