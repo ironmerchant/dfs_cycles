@@ -57,9 +57,16 @@ contains
 
       ! get the next vertex to traverse down
       vertex_w = process_dfs_neighbors(G, vertex_u)
+
       if (vertex_w .ne. -1) then
+
+        ! color the vertex gray
         call G%color_vertex(vertex_w, GRAY)
+
+        ! set the predecessor
         call G%set_predecessor(vertex_w, vertex_u)
+
+        ! push the vertex onto the call stack
         call S%push(vertex_w)
       else
         !  else colour u black
