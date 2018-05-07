@@ -1,5 +1,6 @@
-# swap files
+# various
 *.swp*
+builddir/
 
 # Prerequisites
 *.d
