@@ -36,7 +36,7 @@ contains
   subroutine dfs(g)
     Class(Graph) :: G
     type(Stack) :: S
-    integer :: initial_vertex = 1, vertex_u = -1, vertex_w = -1, predecessor
+    integer :: initial_vertex = 1, vertex_u = -1, vertex_w = -1
 
     !all vertices coloured white previously when G was initialized
     !create a stack S

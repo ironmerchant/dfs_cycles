@@ -76,17 +76,17 @@ build prog@exe/src_Stack.f08.o: fortran_COMPILER ../src/Stack.f08 | prog@exe/uti
 
 build prog@exe/class_graph.mod: FORTRAN_DEP_HACK prog@exe/src_Graph.f08.o
 
-build prog@exe/src_Graph.f08.o: fortran_COMPILER ../src/Graph.f08 | prog@exe/utility.mod prog@exe/class_stack.mod
+build prog@exe/src_Graph.f08.o: fortran_COMPILER ../src/Graph.f08 | prog@exe/class_stack.mod prog@exe/utility.mod
  DEPFILE = prog@exe/src_Graph.f08.o.d
  ARGS = -Iprog@exe -I. -I.. -pipe -Wall -O0 -g -Werror -Wall -Wextra -Jprog@exe
 
 build prog@exe/search_routines.mod: FORTRAN_DEP_HACK prog@exe/src_search_routines.f08.o
 
-build prog@exe/src_search_routines.f08.o: fortran_COMPILER ../src/search_routines.f08 | prog@exe/class_graph.mod prog@exe/class_stack.mod
+build prog@exe/src_search_routines.f08.o: fortran_COMPILER ../src/search_routines.f08 | prog@exe/class_stack.mod prog@exe/class_graph.mod
  DEPFILE = prog@exe/src_search_routines.f08.o.d
  ARGS = -Iprog@exe -I. -I.. -pipe -Wall -O0 -g -Werror -Wall -Wextra -Jprog@exe
 
-build prog@exe/src_main.f08.o: fortran_COMPILER ../src/main.f08 | prog@exe/class_graph.mod prog@exe/utility.mod prog@exe/class_stack.mod prog@exe/search_routines.mod
+build prog@exe/src_main.f08.o: fortran_COMPILER ../src/main.f08 | prog@exe/search_routines.mod prog@exe/class_stack.mod prog@exe/class_graph.mod prog@exe/utility.mod
  DEPFILE = prog@exe/src_main.f08.o.d
  ARGS = -Iprog@exe -I. -I.. -pipe -Wall -O0 -g -Werror -Wall -Wextra -Jprog@exe
 
