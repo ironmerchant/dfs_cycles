@@ -44,22 +44,18 @@ contains
 
     !push v onto S
     call S%push(initial_vertex)
+    call G%color_vertex(initial_vertex, GRAY)
 
     !while S is non-empty
     do while (S%has_items() .eqv. .True.)
-
       ! Get top of S as u
       vertex_u = S%pop()
-      call G%color_vertex(vertex_u, GRAY)
-
-      predecessor = G%get_predecessor(vertex_u)
       print *, vertex_u
 
       ! get the next vertex to traverse down
       vertex_w = process_dfs_neighbors(G, vertex_u)
 
       if (vertex_w .ne. -1) then
-
         ! color the vertex gray
         call G%color_vertex(vertex_w, GRAY)
 
